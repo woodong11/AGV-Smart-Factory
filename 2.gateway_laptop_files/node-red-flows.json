@@ -1,0 +1,602 @@
+[
+    {
+        "id": "739f8c225369d9b3",
+        "type": "tab",
+        "label": "플로우 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "5476209b5a3c62cb",
+        "type": "tls-config",
+        "name": "",
+        "cert": "",
+        "key": "",
+        "ca": "",
+        "certname": "",
+        "keyname": "",
+        "caname": "",
+        "servername": "",
+        "verifyservercert": true,
+        "alpnprotocol": ""
+    },
+    {
+        "id": "2f21d736791f4b74",
+        "type": "mqtt-broker",
+        "name": "AWS",
+        "broker": "aevs1u00atoqw-ats.iot.ap-northeast-2.amazonaws.com",
+        "port": "8883",
+        "tls": "b1f45b3d1858edf3",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": true,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "b1f45b3d1858edf3",
+        "type": "tls-config",
+        "name": "",
+        "cert": "",
+        "key": "",
+        "ca": "",
+        "certname": "dongwoo_certificate.pem.crt",
+        "keyname": "dongwoo_private.pem.key",
+        "caname": "dongwoo_certificate.pem.crt",
+        "servername": "",
+        "verifyservercert": true,
+        "alpnprotocol": ""
+    },
+    {
+        "id": "0b6f4a1bb37b1e22",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "0c37b4f1be4bfb73",
+        "type": "ui_group",
+        "name": "LED밝기",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "cdbd5ef71c90a41d",
+        "type": "ui_tab",
+        "name": "AGV0",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "34304980caecf810",
+        "type": "ui_tab",
+        "name": "AGV1",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "821b340903e8fc8c",
+        "type": "ui_group",
+        "name": "AGV0 정보1",
+        "tab": "cdbd5ef71c90a41d",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "206393090752d287",
+        "type": "ui_group",
+        "name": "AGV0 정보2",
+        "tab": "cdbd5ef71c90a41d",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "87783ba992e9d3d1",
+        "type": "mqtt-broker",
+        "name": "MQTT broker",
+        "broker": "192.168.110.103",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "e7c014ee176cc01d",
+        "type": "ui_group",
+        "name": "Group 1",
+        "tab": "34304980caecf810",
+        "order": 1,
+        "disp": true,
+        "width": 6
+    },
+    {
+        "id": "bc5b3af3c39dd9f2",
+        "type": "ui_group",
+        "name": "Group 2",
+        "tab": "34304980caecf810",
+        "order": 2,
+        "disp": true,
+        "width": 6
+    },
+    {
+        "id": "f98f63b3ef431191",
+        "type": "mqtt-broker",
+        "name": "local Broker",
+        "broker": "192.168.110.120",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "00a73f340fef2982",
+        "type": "ui_group",
+        "name": "Car Info",
+        "tab": "f341c67286c640e4",
+        "order": 1,
+        "disp": true,
+        "width": "19",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "f341c67286c640e4",
+        "type": "ui_tab",
+        "name": "Car Info",
+        "icon": "dashboard",
+        "order": 3,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "1c14723cc01a8901",
+        "type": "mqtt in",
+        "z": "739f8c225369d9b3",
+        "name": "",
+        "topic": "agv0/command",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "87783ba992e9d3d1",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 200,
+        "y": 240,
+        "wires": [
+            [
+                "d757cdf9a54a7d20",
+                "a13b7ba451e43af9"
+            ]
+        ]
+    },
+    {
+        "id": "d757cdf9a54a7d20",
+        "type": "debug",
+        "z": "739f8c225369d9b3",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 460,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "a13b7ba451e43af9",
+        "type": "ui_text",
+        "z": "739f8c225369d9b3",
+        "group": "821b340903e8fc8c",
+        "order": 1,
+        "width": 6,
+        "height": 2,
+        "name": "",
+        "label": "현재 명령",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 500,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "9f4a4e1c42e17142",
+        "type": "mqtt in",
+        "z": "739f8c225369d9b3",
+        "name": "",
+        "topic": "agv0/currentZone",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "87783ba992e9d3d1",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 200,
+        "y": 320,
+        "wires": [
+            [
+                "5903a923196adad0"
+            ]
+        ]
+    },
+    {
+        "id": "abe3b39dbca16fe7",
+        "type": "mqtt in",
+        "z": "739f8c225369d9b3",
+        "name": "",
+        "topic": "agv0/distance",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "87783ba992e9d3d1",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 190,
+        "y": 460,
+        "wires": [
+            [
+                "01ee19ec9e212d0c"
+            ]
+        ]
+    },
+    {
+        "id": "1e5f19159f30b91e",
+        "type": "mqtt in",
+        "z": "739f8c225369d9b3",
+        "name": "",
+        "topic": "agv0/analysis",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "87783ba992e9d3d1",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 190,
+        "y": 400,
+        "wires": [
+            [
+                "38c116187f741b33"
+            ]
+        ]
+    },
+    {
+        "id": "5903a923196adad0",
+        "type": "ui_text",
+        "z": "739f8c225369d9b3",
+        "group": "821b340903e8fc8c",
+        "order": 2,
+        "width": 6,
+        "height": 2,
+        "name": "",
+        "label": "현재위치",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 500,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "38c116187f741b33",
+        "type": "ui_text",
+        "z": "739f8c225369d9b3",
+        "group": "821b340903e8fc8c",
+        "order": 3,
+        "width": 6,
+        "height": 4,
+        "name": "",
+        "label": "인공지능 로그분석",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "style": true,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 530,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "01ee19ec9e212d0c",
+        "type": "ui_gauge",
+        "z": "739f8c225369d9b3",
+        "name": "",
+        "group": "206393090752d287",
+        "order": 1,
+        "width": 6,
+        "height": 3,
+        "gtype": "gage",
+        "title": "전방 장애물 거리",
+        "label": "units",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#992e0a",
+            "#e6e600",
+            "#238029"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 550,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "92fa37f391eebbef",
+        "type": "mqtt in",
+        "z": "739f8c225369d9b3",
+        "name": "",
+        "topic": "agv0/image",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "87783ba992e9d3d1",
+        "nl": false,
+        "rap": false,
+        "inputs": 0,
+        "x": 190,
+        "y": 540,
+        "wires": [
+            [
+                "03b7d4e7878385f7",
+                "7c4fac5c19882353"
+            ]
+        ]
+    },
+    {
+        "id": "03b7d4e7878385f7",
+        "type": "image viewer",
+        "z": "739f8c225369d9b3",
+        "name": "",
+        "width": "140",
+        "data": "payload",
+        "dataType": "msg",
+        "active": true,
+        "x": 830,
+        "y": 540,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2797bf27d741b5f4",
+        "type": "template",
+        "z": "739f8c225369d9b3",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "<img height=\"320px\" src=\"data:image/jpg;base64,{{{payload}}}\">",
+        "output": "str",
+        "x": 560,
+        "y": 600,
+        "wires": [
+            [
+                "9f9f021fa47dee15"
+            ]
+        ]
+    },
+    {
+        "id": "9f9f021fa47dee15",
+        "type": "ui_template",
+        "z": "739f8c225369d9b3",
+        "group": "206393090752d287",
+        "name": "img",
+        "order": 2,
+        "width": 6,
+        "height": 5,
+        "format": "<div ng-bind-html=\"msg.payload\"></div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 750,
+        "y": 600,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7c4fac5c19882353",
+        "type": "base64",
+        "z": "739f8c225369d9b3",
+        "name": "",
+        "action": "",
+        "property": "payload",
+        "x": 400,
+        "y": 600,
+        "wires": [
+            [
+                "2797bf27d741b5f4"
+            ]
+        ]
+    }
+]

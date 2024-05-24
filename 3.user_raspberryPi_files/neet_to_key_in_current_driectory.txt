@@ -1,0 +1,2 @@
+neet_to_openai_key_in_current_driectory!!
+neet_to_google_speach_key_in_current_driectory!!
