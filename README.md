@@ -2,15 +2,18 @@
 <h3>스마트팩토리에서 활용될 수 있는, 반자율주행 물류운반 AGV로봇 구현 IoT 프로젝트입니다.<br> (SSAFY embedded 관통 프로젝트)</h3>
 <br><br>
 <img src="https://github.com/woodong11/AGV-Smart-Factory-AI/assets/91379630/2493fbed-7328-431d-a7ba-19c2e875f0ad" width="700">
+
 <br><br>
 
 ## Project Introduction Video
 [![Video Label](http://img.youtube.com/vi/uZl3ZouLiyY/0.jpg)](https://youtu.be/uZl3ZouLiyY)
+<br><b>프로젝트 기간: 2024-05-17 ~ 2024-05-24 <br>
+참가인원: 김남균, 이동우 </b>
 <br><br>
 
 ## Features
 <b>1.고전 Computer Vision과 고전 제어 (PID control)을 활용한 line tracing, working area recognition <br>
-2.원격으로 AGV를 제어하는 GUI 제어기 제공 (수동조작모드, 음성조작모드) <br>
+2.근무자가 원격으로 AGV를 제어하는 GUI 제공 (수동조작모드, 음성조작모드) <br>
 3.openai를 활용한 firebase 로그 데이터 분석, Node-RED를 활용한 UI 제공 <br>
 4.서버리스 기반 Gateway, Edge device 구축  <br>
 </b>
