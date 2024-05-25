@@ -1,5 +1,5 @@
 ## AGV Project Overview
-<h3>스마트팩토리에서 활용될 수 있는, 반자율주행 물류운반 AGV로봇 구현 IoT 프로젝트입니다.<br> (SSAFY embedded 관통 프로젝트)</h3>
+<h3>스마트팩토리에서 활용될 수 있는, 반자율주행 물류운반로봇(AGV) 구현 IoT 프로젝트입니다.<br> (SSAFY embedded 관통 프로젝트)</h3>
 <br><br>
 <img src="https://github.com/woodong11/AGV-Smart-Factory-AI/assets/91379630/2493fbed-7328-431d-a7ba-19c2e875f0ad" width="700">
 
