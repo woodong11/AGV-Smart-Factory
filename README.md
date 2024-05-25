@@ -33,29 +33,42 @@
 
 ## Enviroment setting
 <h3>jetson nano (jtank)</h3>
+
+
 ```
 jetpack 4.3
 python 3.6.9
 ```
 
+
 <h3>laptop(broker) </h3>
+
+
 ```
 python 3.11
 mosquitto 2.0.18
 Node.js 20.13.1
 Node-RED 3.1.9 (+ Dashboard 3.6.5)
 ```
+
+
 <h3>raspberry pi5(user GUI)</h3>
+
+
 ```
 python 3.6.9
 pyside 2
 ```
+
+
 <h3>raspberry pi5(edge device on AGV)</h3>
+
+
 ```
 python 3.6.9
 ```
 
-추가예정
+
 
 ## How to run
 추가예정
